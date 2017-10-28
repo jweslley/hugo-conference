@@ -1,0 +1,147 @@
+baseurl: "https://jweslley.github.io/hugo-conference/"
+title: "Conference name"
+canonifyurls: true
+theme: "hugo-conference"
+
+GoogleAnalytics: "UA-9232216-1"
+
+params:
+  # Conference info
+  Name: "Conference name"
+  Description: "Conference description"
+  Date: "November 15"
+  Price: "Only $100" # If your event is free, just comment this line
+  Venue: "Coco Bongo"
+  Address: "Boulevard Kukulcan, 30"
+  City:  "Cancún"
+  State: "Quintana"
+  Images: ["/img/badge.jpg"]
+
+  # Active sections on the website to deactivate comment out with '#'
+  # you can also change order here and it will reflect on page
+  Sections:
+    - about
+    - location
+    - speakers
+    - schedule
+    - sponsors
+    - partners
+    #- contact
+
+  # Titles which you can translate to other languages
+  Titles:
+    about: "About"
+    location: "Location"
+    speakers: "Speakers"
+    schedule: "Schedule"
+    sponsors: "Sponsors"
+    partners: "Partners"
+    contact: "Contact"
+
+  # The Call To Action button at the header,
+  # If you don't want this, just remove the callToAction property.
+  CallToAction:
+    text: "Register now!"
+    link: "http://eventick.com.br"
+
+  # Fork me on GitHub, if you don't want this, just remove the forkButton property
+  ForkButton:
+    repository: "https://github.com/jweslley/hugo-conference/"
+
+  # List of Sponsors
+  Sponsors:
+    - name: "Eventick"
+      logo: "/img/sponsor.png"
+      url: "http://eventick.com.br"
+
+  # List of Partners
+  Partners:
+    - name: "Hugo"
+      logo: "/img/hugo.jpg"
+      url: "https://gohugo.io"
+    - name: "BrazilJS"
+      logo: "/img/partner.png"
+      url: "http://braziljs.org"
+
+  # The entire schedule
+  Schedule:
+    - name: "Check-in / Breakfast"
+      time: "9h00"
+
+    - name: "Linus Torvalds"
+      photo: "/img/speaker.jpg"
+      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+      company: "Linux Foundation"
+      link:
+        href: "http://twitter.com/linus"
+        text: "@linus"
+      presentation:
+        title: "Digging into a Linux Kernel"
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+        time: "10h00"
+
+    - name: "Bill Gates"
+      photo: "/img/speaker.jpg"
+      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+      company: "Microsoft"
+      link:
+        href: "http://github.com/billy95"
+        text: "@billy95"
+      presentation:
+        title: "Introducing Windows 12"
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+        time: "11h00"
+
+    - name: "Lunch"
+      time: "12h00"
+
+    - name: "Chuck Norris"
+      photo: "/img/speaker.jpg"
+      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+      company: "Delta Command"
+      link:
+        href: "http://twitter.com/littlechuck"
+        text: "@littlechuck"
+      presentation:
+        title: "How to kill a elephant with one finger"
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+        time: "13h00"
+
+    - name: "Steve Jobs"
+      photo: "/img/speaker.jpg"
+      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+      company: "Apple, Inc."
+      link:
+        href: "http://github.com/stevie"
+        text: "@stevie"
+      presentation:
+        title: "Presenting iPad"
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+        time: "14h00"
+
+    - name: "Coffee-break"
+      time: "15h00"
+
+    - name: "Mark Zuckerberg"
+      photo: "/img/speaker.jpg"
+      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+      company: "Facebook"
+      link:
+        href: "http://twitter.com/zuck"
+        text: "@zuck"
+      presentation:
+        title: "Revealing Facebook Secrets"
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+        time: "16h00"
+
+    - name: "Steve Wozniak"
+      photo: "/img/speaker.jpg"
+      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+      company: "Apple, Inc."
+      link:
+        href: "http://twitter.com/woz"
+        text: "@woz"
+      presentation:
+        title: "Why do I prefer Android over iPhone"
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+        time: "17h00"
