@@ -7,15 +7,15 @@ Hugo conference is a theme for conferences/events based on the original [conf-bo
 1. Install [Hugo](https://gohugo.io)
 2. Create a new site by running:
 
-    hugo new site my-conf
-    cd my-conf
-    git clone https://github.com/jweslley/hugo-conference themes/hugo-conference
-    rm -f config.toml
-    cp themes/hugo-conference/config.yml .
+        hugo new site my-conf
+        cd my-conf
+        git clone https://github.com/jweslley/hugo-conference themes/hugo-conference
+        rm -f config.toml
+        cp themes/hugo-conference/config.yml .
 
 3. It's done. Just start Hugo server to see it live!
 
-    hugo server --watch
+        hugo server --watch
 
 
 ## Customizing the site
