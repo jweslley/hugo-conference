@@ -42,7 +42,7 @@ params:
   # If you don't want this, just remove the callToAction property.
   CallToAction:
     text: "Register now!"
-    link: "http://eventick.com.br"
+    link: "http://register.example.com"
 
   # Fork me on GitHub, if you don't want this, just remove the forkButton property
   ForkButton:
@@ -50,9 +50,9 @@ params:
 
   # List of Sponsors
   Sponsors:
-    - name: "Eventick"
-      logo: "/img/sponsor.png"
-      url: "http://eventick.com.br"
+    - name: "Hugo"
+      logo: "/img/hugo.png"
+      url: "http://gohugo.io"
 
   # List of Partners
   Partners:
