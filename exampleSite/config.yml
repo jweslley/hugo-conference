@@ -1,4 +1,4 @@
-baseurl: "https://jweslley.github.io/hugo-conference/"
+baseurl: "https://example.org/"
 title: "Conference name"
 canonifyurls: true
 theme: "hugo-conference"
