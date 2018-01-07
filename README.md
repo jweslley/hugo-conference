@@ -11,7 +11,7 @@ Hugo conference is a theme for conferences/events based on the original [conf-bo
         cd my-conf
         git clone https://github.com/jweslley/hugo-conference themes/hugo-conference
         rm -f config.toml
-        cp themes/hugo-conference/config.yml .
+        cp themes/hugo-conference/exampleSite/config.yml .
 
 3. It's done. Just start Hugo server to see it live!
 
