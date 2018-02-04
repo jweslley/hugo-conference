@@ -16,6 +16,7 @@ params:
   City:  "Cancún"
   State: "Quintana"
   Images: ["/img/badge.jpg"]
+  GoogleMapsKey: "my-secret-maps-key"
 
   # Active sections on the website to deactivate comment out with '#'
   # you can also change order here and it will reflect on page

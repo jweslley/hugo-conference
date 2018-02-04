@@ -32,6 +32,10 @@ By default, the site have the following sections:
 
 Ps: It's important to change the `baseurl` property from `config.yml` file in order to reflect your settings.
 
+### Google Maps
+
+Google now requires a Google Maps JavaScript API Key to show maps. You can obtain your key [here](https://developers.google.com/maps/documentation/javascript/get-api-key). Then set your API key in the `GoogleMapsKey` param in the `config.yml` file.
+
 ## License
 
 MIT, see [LICENSE](https://github.com/jweslley/hugo-conference/blob/master/LICENSE).
