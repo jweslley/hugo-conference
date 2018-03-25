@@ -65,84 +65,126 @@ params:
       url: "http://braziljs.org"
 
   # The entire schedule
-  Schedule:
-    - name: "Check-in / Breakfast"
-      time: "9h00"
-
+  Speakers: 
     - name: "Linus Torvalds"
       photo: "/img/speaker.jpg"
       bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
       company: "Linux Foundation"
-      link:
-        href: "http://twitter.com/linus"
-        text: "@linus"
-      presentation:
+      talk: 
         title: "Digging into a Linux Kernel"
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-        time: "10h00"
-
+        href: "/#2"
+      link:
+        twitter: "http://twitter.com/linus"
+        github: "http://github.com/linus"
+        linkedin: "http://linkedin.com/linus"
     - name: "Bill Gates"
       photo: "/img/speaker.jpg"
       bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
       company: "Microsoft"
-      link:
-        href: "http://github.com/billy95"
-        text: "@billy95"
-      presentation:
+      talk: 
         title: "Introducing Windows 12"
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-        time: "11h00"
-
-    - name: "Lunch"
-      time: "12h00"
-
+        href: "/#3"
+      link:
+        twitter: "http://twitter.com/bill"
+        github: "http://github.com/bill"
+        linkedin: "http://linkedin.com/bill"
     - name: "Chuck Norris"
       photo: "/img/speaker.jpg"
       bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
       company: "Delta Command"
-      link:
-        href: "http://twitter.com/littlechuck"
-        text: "@littlechuck"
-      presentation:
+      talk: 
         title: "How to kill a elephant with one finger"
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-        time: "13h00"
-
+        href: "/#4"
+      link:
+        twitter: "http://twitter.com/chuk"
+        linkedin: "http://linkedin.com/chuck"
     - name: "Steve Jobs"
       photo: "/img/speaker.jpg"
       bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
       company: "Apple, Inc."
-      link:
-        href: "http://github.com/stevie"
-        text: "@stevie"
-      presentation:
+      talk:
         title: "Presenting iPad"
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-        time: "14h00"
-
-    - name: "Coffee-break"
-      time: "15h00"
-
+        href: "/#6"
+      link:
+        twitter: "http://twitter.com/steve"
+        github: "http://github.com/steve"
+        linkedin: "http://linkedin.com/steve"
     - name: "Mark Zuckerberg"
       photo: "/img/speaker.jpg"
       bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
       company: "Facebook"
-      link:
-        href: "http://twitter.com/zuck"
-        text: "@zuck"
-      presentation:
+      talk:
         title: "Revealing Facebook Secrets"
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-        time: "16h00"
-
+        href: "/#8"
+      link:
+        twitter: "http://twitter.com/zuck"
+        github: "http://github.com/chuck"
     - name: "Steve Wozniak"
       photo: "/img/speaker.jpg"
       bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
       company: "Apple, Inc."
-      link:
-        href: "http://twitter.com/woz"
-        text: "@woz"
-      presentation:
+      talk:
         title: "Why do I prefer Android over iPhone"
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-        time: "17h00"
+        href: "/#9"
+      link:
+        twitter: "http://twitter.com/woz"
+        github: "http://github.com/woz"
+     
+
+
+  Schedule:
+  - presentation:
+      id: 1
+      title: "Registration"
+      description: "Registration and ice breakers."
+      time: "09h00"
+  - presentation:
+      id: 2
+      title: "Digging into a Linux Kernel"
+      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+      time: "10h00"
+      speaker: "Linus Torwalds"
+      company: "Linux Foundation"
+  - presentation:
+      id: 3
+      title: "Introducing Windows 12"
+      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+      time: "11h00"
+      speaker: "Bill Gates"
+      company: "Microsoft"
+  - presentation:
+      id: 4
+      title: "Lunch"
+      time: "12h00"
+  - presentation:
+      id: 5
+      title: "How to kill a elephant with one finger"
+      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+      time: "13h00"
+      speaker: "Chuck Norris"
+      company: "Delta Command"
+  - presentation:
+      id: 6
+      title: "Presenting iPad"
+      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+      time: "14h00"
+      speaker: "Steve Jobs"
+      company: "Apple, Inc."
+  - presentation:
+      id: 7
+      title: "Coffee Break"
+      time: "15h00"
+  - presentation:
+      id: 8
+      title: "Revealing Facebook Secrets"
+      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+      time: "16h00"
+      speaker: "Mark Zukerberg"
+      company: "Facebook"
+  - presentation:
+      id: 9
+      title: "Why do I prefer Android over iPhone"
+      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+      time: "17h00"
+      speaker: "Steve Wozniak"
+      company: "Apple, Inc."
