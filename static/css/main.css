@@ -401,7 +401,7 @@ nav {
 }
 .speech-title {
   padding-top: 10px;
-  font-size: 2em;
+  font-size: 1.6em;
   margin-bottom: 1em;
 }
 .speech-time {
@@ -410,10 +410,18 @@ nav {
   letter-spacing: -0.03em;
 }
 .speakers-name {
-  font-size: 1.6em;
+  font-size: 2em;
+  float: left;
+
+}
+
+.speaker-link {
+  margin-left: 15px;
+  float: right;
 }
 .speakers-item p {
   font-size: 1.4em;
+  clear: both;
 }
 /* =============================================================================
    SCHEDULE

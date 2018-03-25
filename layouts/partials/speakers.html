@@ -1,7 +1,7 @@
 <h2 class="section-title">{{ .titles.speakers }}</h2>
 
 <ul class="speakers-list">
-{{ range $speaker := (where .schedule "presentation" "ne" nil) }}
+{{ range $speaker := .speakers }}
   <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
     {{ with .photo }}
       <span class="speaker-photo">
@@ -9,19 +9,28 @@
       </span>
     {{ end }}
 
-    <h3 class="speech-title">
-      {{ with .presentation.time }}
-      <span class="speech-time">{{ . }}</span>
-      {{ end }}
-      <span>{{ .presentation.title }}</span>
-    </h3>
-
     <h3 class="speakers-name">{{ .name }}
-      {{ with .link }}
-      <a href="{{ .href }}" target="_blank" title="{{ .text }}"> {{ .text }} </a>
+      {{ with $speaker.link.twitter }}
+      <div class="speaker-link">
+          <a href="{{ $speaker.link.twitter }}"><i class="fab fa-linkedin"></i></a>
+      </div>    
+    {{ end }}
+    {{ with $speaker.link.github }}
+        <div class="speaker-link">
+            <a href="{{ $speaker.link.github }}"><i class="fab fa-github-square"></i></a>
+        </div>    
       {{ end }}
+    {{ with $speaker.link.twitter }}
+          <div class="speaker-link">
+              <a href="{{ $speaker.link.twitter }}"><i class="fab fa-twitter-square"></i></a>
+          </div>    
+        {{ end }}
     </h3>
     <p class="speakers-bio">{{ .bio }}</p>
+    <h4 class="speech-title">
+      <span>Talk:</span>
+      <a href="{{ .talk.href }}" title="{{ .text }}"> {{ .talk.title }} </a>
+    </h4>
   </li>
 {{ end }}
 </ul>
