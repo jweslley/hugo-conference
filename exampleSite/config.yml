@@ -3,7 +3,7 @@ title: "Conference name"
 canonifyurls: true
 theme: "hugo-conference"
 
-GoogleAnalytics: "UA-9232216-1"
+GoogleAnalytics: ""
 
 params:
   # Conference info
